@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>San Mart</title>
+    <link rel="stylesheet" href="style.css">
 
     <!--font awesome-->
 
@@ -19,13 +20,13 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-secondary ">
-            <div class="container-fluid my-5 ">
-                <a class="navbar-brand ms-5 fs-1" href="#"><i class="fab fa-stripe-s text-info"></i>an Mart <i class="fab fa-phoenix-framework" style="color :#208cca"></i></a>
+            <div class="container-fluid">
+                <a class="navbar-brand ms-5 fs-1" href="#"><i class="fab fa-stripe-s text-info "></i>an Mart <i class="fab fa-phoenix-framework" style="color :#208cca"></i></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent ">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 m-2">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 m-2 fw-bolder">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
@@ -34,10 +35,11 @@
                       Product
                     </a>
                             <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Shirt & Pant</a></li>
-                                <li><a class="dropdown-item" href="#">Jersey</a></li>
-                                <li><a class="dropdown-item" href="#">Watch</a></li>
-                                <li><a class="dropdown-item" href="#">Footware</a></li>
+                                <li><a class="dropdown-item" href="#clothes">Clothes</a></li>
+                                <li><a class="dropdown-item" href="#footwear">Footwear</a></li>
+                                <li><a class="dropdown-item" href="#backpack">Backpack</a></li>
+                                <li><a class="dropdown-item" href="#watch">Watch</a></li>
+
                             </ul>
                         </li>
                         <li class="nav-item ">
@@ -51,8 +53,10 @@
                         <input class="form-control m-2" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>
+
                 </div>
             </div>
+
         </nav>
 
         <section class="container my-5 text-center">
@@ -114,7 +118,7 @@
 
                             </div>
                             <div class="col-lg-5">
-                                <img src="images/Banner/banner01.png" class="d-block w-100" alt="...">
+                                <img src="images/Banner/bannner0001.png" class="d-block w-100" alt="...">
 
                             </div>
                         </div>
@@ -148,9 +152,55 @@
         </section>
     </header>
 
+    <!-- main section-->
+
     <main>
-        <section class="container my-5" id="shoes">
-            <h2>Shoes</h2>
+
+        <!-- Shirt pant-->
+
+        <section class="container my-5" id="clothes">
+            <h2 class="my-4" id="clothes"><i class="fas fa-tshirt mx-3 text-info"></i>Clothes</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 ">
+                <div class="col ">
+                    <div class="card h-100 border-0 shadow-lg">
+                        <img src="images/Shirt & pant/shirt1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Shirt</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-lg">
+                        <img src="images/Shirt & pant/pant1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Pant</h5>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-lg">
+                        <img src="images/Shirt & pant/t-shirt1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">T-shirt</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                        </div>
+
+                    </div>
+                </div>
+                <a target="blank" style="text-decoration: none; color: blueviolet;" class="fs-5 mt-5 ms-auto mb-2 mb-lg-0  fw-bolder" href="shoes.html">See More <i class="fas fa-long-arrow-alt-right"></i></a>
+            </div>
+
+        </section>
+
+        <!--Footware-->
+
+
+        <section class="container my-5" id="footwear">
+            <h2 class="my-4">Footwear</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 ">
                 <div class="col ">
                     <div class="card h-100 border-0 shadow-lg">
@@ -176,17 +226,124 @@
                     <div class="card h-100 border-0 shadow-lg">
                         <img src="images/Footware/shoe3.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Red Airmax</h5>
+                            <h5 class="card-title">ORies</h5>
                             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                         </div>
 
                     </div>
                 </div>
-                <a target="blank" style="text-decoration: none; color: blueviolet;" class="fs-5 mt-5 ms-auto mb-2 mb-lg-0 " href="shoes.html">See More <i class="fas fa-long-arrow-alt-right"></i></a>
+                <a target="blank" style="text-decoration: none; color: blueviolet;" class="fs-5 mt-5 ms-auto mb-2 mb-lg-0 fw-bolder" href="shoes.html">See More <i class="fas fa-long-arrow-alt-right"></i></a>
+            </div>
+
+        </section>
+
+        <!--Bags-->
+
+        <section class="container my-5" id="backpack">
+            <h2 class="my-4">Backpack</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 ">
+                <div class="col ">
+                    <div class="card h-100 border-0 shadow-lg">
+                        <img src="images/bags/bag-1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Red OGIO</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-lg">
+                        <img src="images/bags/bag-2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Blue Burton</h5>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-lg">
+                        <img src="images/bags/bag-3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Addidas Black </h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                        </div>
+                    </div>
+                </div>
+                <a target="blank" style="text-decoration: none; color: blueviolet;" class="fs-5 mt-5 ms-auto mb-2 mb-lg-0 fw-bolder" href="shoes.html">See More <i class="fas fa-long-arrow-alt-right"></i></a>
+            </div>
+        </section>
+
+        <!--watch-->
+        <section class="container my-5" id="watch">
+            <h2 class="my-4">Watch</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 ">
+                <div class="col ">
+                    <div class="card h-100 border-0 shadow-lg">
+                        <img src="images/Watch/watch1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Go Move Pro</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-lg">
+                        <img src="images/Watch/watch2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Galaxy 360</h5>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-lg">
+                        <img src="images/Watch/watch3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Huawei</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                        </div>
+
+                    </div>
+                </div>
+                <a target="blank" style="text-decoration: none; color: blueviolet;" class="fs-5 mt-5 ms-auto mb-2 mb-lg-0 fw-bolder" href="shoes.html">See More <i class="fas fa-long-arrow-alt-right"></i></a>
+            </div>
+
+        </section>
+
+        <section style="height: 300px; background-color:#fceae8;" class="container d-flex justify-content-center my-5 panda-bg-info align-items-center rounded-3" id="subcribe">
+            <div>
+                <h1>LET'S STAY IN TOUCH</h1>
+                <p>Get updates on sales, specials and more</p>
+                <input class="form-control" type="text" placeholder="Your Email">
+                <br>
+
+                <button class="SM-btn-color">SUBMIT</button>
             </div>
 
         </section>
     </main>
+
+
+
+    <footer>
+        <section>
+            <h1>San Mart products</h1>
+            <h1><i class="fab fa-phoenix-framework" style="color :#208cca"></i></h1>
+
+            <p>All rights reserved</p>
+            <a target="_blank" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a target="_blank" href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+            <a target="_blank" href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+            <a target="_blank" href="https://www.youtube.com/"><i class="fab fa-youtube mb-5"></i></a>
+            <p>Copyright <span class="copyright"><i class="far fa-copyright mt-5"></i></span> 2022 san-mart.com</p>
+
+        </section>
+    </footer>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
